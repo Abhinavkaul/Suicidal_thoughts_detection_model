@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  suicidal-thought-prediction:
+    build: ./
+    image: suicidal_thought_prediction
+    container_name: Suicidal_Thought
+    entrypoint: python -m pytest --cov=tests/ ./tests
